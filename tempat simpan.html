@@ -1,0 +1,150 @@
+ <div class="project-box">
+            <img src="gambar/SINPENRU.png">
+            <h1>sinpenru</h1>
+            <p>sistem peminjaman ruangan</p>
+            <a href="#"></a>
+         </div>
+
+         <div class="project-box">
+            <img src="gambar/kahilangansanak.png">
+            <h1>Kaliangan sanak</h1>
+            <p>game horror lokal</p>
+            <a href="#"></a>
+         </div>
+
+         <div class="project-box">
+            <img src="gambar/wedding.jpg">
+            <h1>wedding</h1>
+            <p>undungan pernikahan</p>
+            <a href="#"></a>
+         </div>
+      
+
+
+
+         
+.project-container .project-box{
+    position:relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-biru3);
+    overflow: hidden;
+    display: flex;
+    background: var(--bg-hijau1);
+    margin-bottom: 10px
+}
+
+
+
+
+<div class="project-container">
+          <div class="project-content">
+             <div class="card wrapper">
+                 <div class="card">
+                    <div class="image-content">
+                      <span class="overlay"></span>
+
+                      <div class="card-image">
+                         <img src="gambar/SIPENRU.png" alt="" class="card-img">
+                      </div>
+                    </div>
+                    <div class="card-content">
+                        <h2 class="name">sinperu</h2>
+                        <p class="desc">aplikasi peminjaman ruangan dengan jadwal</p>
+
+                        <div class="btn-box">
+                           <a href="gambar/cv.pdf">Read CV</a>
+                        </div>
+                    </div>
+                 </div>
+             </div>
+          </div>
+      </div>
+
+
+      .project-container{
+   display: flex;
+   align-items: center;
+   justify-content: center
+}
+
+.project-content{
+    margin: 0 40px;
+}
+
+.card{
+  border-radius: 25px;
+  background-color: skyblue;
+}
+
+.image-content,
+.card-content{
+    display:flex;
+    flex-direction: colum;
+    align-items: center;
+    padding: 10px 14px
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.card-image .card-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20%;
+    border: 4px solid var(--bg-biru3);
+}
+
+.overlay{
+    background-color:var(--bg-biru3)
+    
+}
+
+
+//button cv
+
+.btn-box-cv{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: #7ed957;
+    border: 20px solid #7ed957;
+    border-radius: 20px;
+    font-size: 19px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.btn-box a:hover,
+.btn-box a.active{
+    background: var(--bg-hijau2); 
+}
+
+
+//interted-box
+
+.interested-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    background: #7ed957;
+    border: 2px solid #7ed957;
+    border-radius: 12px;
+    font-size: 19px;
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-right: 10px;
+    margin-top: 20px;
+}

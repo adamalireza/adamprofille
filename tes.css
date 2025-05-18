@@ -1,0 +1,46 @@
+.video-editing .card{
+    position: relative;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    flex-direction: colum;
+    width: 300px;
+    height: 400px;
+    background: var(--bg-biru3);
+    border-radius: 1rem;
+    color: skyblue;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.video-editing .card::before, 
+.card::after{
+    content: '';
+    position: absolute;
+}
+
+.video-editing .card::before{
+    width: 200%;
+    height: 200%;
+    background-image: conic-gradient(var(--bg-hijau1)
+    0deg, transparent 60deg, transparent 180deg, var(--bg-hijau1)
+    180deg, transparent 240deg);
+    inset: -50%;
+    z-index: -2;
+    animation: border-animation 4s linear infinite;
+
+}
+
+@keyframes border-animation{
+    to{
+        transform: rotate(-360deg);
+    }
+}
+
+.video-editing .card::after{
+    inset: 4px;
+    border-radius: calc( 1rem - 4px);
+    transition: all 0.3 linear;
+}
