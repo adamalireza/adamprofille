@@ -11,7 +11,6 @@
     border: none;
     outline: none;
     scroll-behavior: smooth;
-    
 }
 
 :root{
@@ -34,8 +33,6 @@ body{
 
 .header{
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     padding: 30px 10%;
     background: #2a2727;
@@ -52,43 +49,47 @@ body{
     font-weight: 600;
 }
 
-.navbar a{
+.header ul{
+    list-style: none;
+    display: flex;
+}
+
+.header li{
     font-size: 18px;
     color:#ffffff;
     text-decoration: none;
     font-weight: 500;
     margin-left: 35px;
+} 
+
+
+.header a{
+    text-decoration: none;
+    color: #000000;
+    transition: background-color 150ms ease;
+
 }
 
-.navbar a:hover,
-.navbar a.active{
-    color:#5ce1e6; 
+.header a:hover,
+.header a:active{
+    background-color:var(--bg-biru3); 
 }
 
 
-.home{
+section{
     height: 100vh;
-    display:flex;
-    align-items: center;
     padding: 0 10%;
     gap: 30rem;
-    //background:skyblue;
 }
 
-.home-content{
- 
+.home{
+    display:flex;
+    align-items: center;
 }
 
 
 .home-img img{
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
     border-radius: 100%;
-    display: flex;
-    align-item: center;
-    justify-content: center;
-    //border: 10px solid ;
 }
 
 .home .home-img {
@@ -96,24 +97,19 @@ body{
     display: flex;
     align-item: center;
     justify-content: center;
-    height: 510px;
-    width: 510px;
-    //background: var(--bg-biru3);
-    //box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     isolation: isolate;
-    //overflow: hidden;
 }
 
 .home .home-img::before, 
 .home-img::after{
     content: '';
     position: absolute;
-    top: -1%;
+    top: -3%
 }
 
 .home .home-img::before{
     width: 100%;
-    height: 100%;
+    height: 105%;
     border-radius: 100%;
     background-image: conic-gradient(var(--bg-hijau3)
     0deg, transparent 60deg, transparent 180deg, var(--bg-hijau3)
@@ -129,11 +125,6 @@ body{
     }
 }
 
-.home .home-img::after{
-    border-radius: 100%;
-    transition: all 0.3 linear;
-    z-index: -1;
-}
 
 
 .home-content h2{
@@ -235,14 +226,6 @@ body{
     
 }
 
-.interested{
-    min-height: 100vh;
-    padding: 100px 10%; 
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
 
 .interested-container{
   display: flex;
@@ -320,14 +303,6 @@ body{
 }
 
 
-
-
-
-.project{
-    min-height: 100vh;
-    padding: 100px 10%;
-}
-
 .project h2{
   margin-top: 20px;
   margin-bottom: 20px;
@@ -368,15 +343,13 @@ body{
 }
 
 
-.designer{
-    //min-height: 100vh;
-    //padding: 10px 10%; 
-    //gap: 2rem;
-    //margin: 0 auto'
+.designer{ 
+    padding: 30px 10%;
+    height: 250vh;
+
 }
 
 .design{
-    
     margin: 0 auto;
     columns: 2 200px;
     column-gap: 2rem;
@@ -394,17 +367,13 @@ body{
    transform: scale(1.03);
 }
 
-.video-editing{
-    min-height: 100vh;
-    padding: 10px 10%;
-}
+
 
 .video-editing .card{
     position: relative;
     display: flex;
     align-item: center;
     justify-content: center;
-    flex-direction: colum;
     width: 300px;
     height: 400px;
     background: var(--bg-biru3);
@@ -434,6 +403,7 @@ body{
 
 }
 
+
 @keyframes border-animation{
     to{
         transform: rotate(-360deg);
@@ -449,12 +419,9 @@ body{
 }
 
 .contact{
-    min-height: 50vh;
-    padding: 100px 10%; 
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
+    height: 30vh;
 }
+
 
 .contact-container{
     font-size: 40px;
@@ -478,7 +445,35 @@ body{
 }
 
 
+/*breakpoints*/
 
+@media (max-width: 1200px){
+    html{
+        font-size: 55%
+    }
+}
+
+
+@media (max-width: 911px){
+    .header{
+        padding: 2rem 3%;
+    }
+
+    section{
+        padding 10rem 3% 2rem;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+
+@media (max-width: 576px) {
+     img{
+         max-width: 10px;
+     }
+}
 
 
 
