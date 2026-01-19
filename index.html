@@ -6,26 +6,31 @@
     <title>Portopolio</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href='https://cdn.boxicons.com/3.0.7/fonts/basic/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-   <header class="header">
-       <a href="" class="logo">Adam Alireza</a>
-          <ul>
-             <li><a href="#home">Home</a></li>
-             <li><a href="#about">About</a></li>
-             <li><a href="#interested">Interested</a></li>
-             <li><a href="#project">Project</a></li>
-             <!--<li>
-                <a href="">Project</a>
-                <ul class="dropdown">
-                 <li><a href="#project">programing</a></li>
-                 <li><a href="#modeling">3D modeling</a></li>
-                 <li><a href="#video-editing">video editing</a></li>
-                </ul>
-             </li>-->
-             <li><a href="#contact">Contact</a></li>
-          </ul>
-   </header>
+<!--header section--> 
+   <nav>
+     <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><i class='bx  bx-x'></i> </a></li>
+        <li><a href="#home">home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#interested">Interested</a></li>
+        <li><a href="#project">Project</a></li>
+        <li><a href="#contact">Contact</a></li>
+     </ul>
+      <ul>
+        <li><a href="#home">Adam alireza </a></li>
+        <li class="hidemobile"><a href="#home">home</a></li>
+        <li class="hidemobile"><a href="#about">About</a></li>
+        <li class="hidemobile"><a href="#interested">Interested</a></li>
+        <li class="hidemobile"><a href="#project">Project</a></li>
+        <li class="hidemobile"><a href="#contact">Contact</a></li>
+        <li onclick=showSidebar()><a href="#"><i class='bx  bx-menu-wide'></i></a></li>
+     </ul>
+   </nav>
 
 <!--home section-->   
    <section class="home" id="home">
@@ -33,7 +38,8 @@
         <h2>hi semua</h2>
         <h1>Adam Alireza s</h1>
         <h3>junior Web Developer|| 3D artist</h3>
-        <p>seorang individu yang selalu beradaptasi dan belajar,karena dunia selalu membutuhkan orang seperti ini</p>
+        <p>seorang individu yang selalu beradaptasi dan belajar</p>
+        <p>karena dunia selalu membutuhkan orang seperti ini</p>
         <div class="btn-box">
             <a href="#contact">Hire me</a>
             <a href="#about">Liat dulu</a>
@@ -71,7 +77,7 @@
            <div class="interested-box">
               <i class='bx bx-code-alt'></i>
               <h3>programing</h3>
-              <p>sering membuat project kampus</p>
+              <img src="gambar/logoprograming.png" height="70px">
               <div class="btn-box">
                    <a href="#project" class="btnsize">Explore</a>
               </div>
@@ -80,7 +86,7 @@
            <div class="interested-box2">
               <i class='bx bx-paint'></i>
               <h3>designer</h3>
-              <p>membuat poster dan gambar</p>
+              <img src="gambar/canva.png" height="70px">
               <div class="btn-box">
                 <a href="#designer" class="btnsize">Explore</a>
               </div>
@@ -89,7 +95,7 @@
            <div class="interested-box3">
               <i class='bx bxs-universal-access'></i>
               <h3>3D object</h3>
-              <p>suka membuat 3D</p>
+              <img src="gambar/blender.png" height="70px">
               <div class="btn-box">
                 <a href="#video-editing" class="btnsize">Explore</a>
               </div>   
@@ -107,7 +113,7 @@
                <img src="gambar/kahilangansanak.png">
             </div>
             <div class="content">
-               <h1>Kahilangan sanak</h1>
+               <h1>Kahilangan</h1>
                <p>game horror lokal</p>
                <div class="btn-box">
                   <a href="https://youtu.be/tk9BRlcZP7M?si=CVCNNiB0DPvI1huu" class="btnsize">Show</a>
@@ -143,7 +149,7 @@
       </div>
    </section>
 
- <!-- designer -->
+<!-- designer -->
    <section class="designer" id="designer">
      <h2 class="heading">designer</h2>  
       
@@ -155,13 +161,13 @@
      </div>
    </section>
 
-   <!--video editing-->
+<!--video editing-->
    <section class="video-editing" id="video-editing">
       <h2 class="heading">3D object</h2> 
       
            <div class="containerv">
               <div class="card">
-                  <img src="gambar/mariaban.png" alt="">
+                  <img src="" alt="">
                </div>
            </div>
    </section>
@@ -188,7 +194,15 @@
       </div>
    </section>
 
-   <script src="scriptt.js"></script>
+   <script>
+       function showSidebar(){
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.sytle.display = 'flex'
+      }
+      function hideSidebar(){
+         const sidebar = document.querySelector('.sidebar')
+         sidebar.sytle.display = 'none'
+      }
+   </script>
 </body>
-
 </html>
