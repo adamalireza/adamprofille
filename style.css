@@ -121,10 +121,6 @@ nav a:active{
     justify-content: center;
 }
 
-.home-content{
-     max-width: 600px;
-}
-
 .home-content h2{
   font-size: 30px;
   font-weight: 700;
@@ -212,7 +208,10 @@ nav a:active{
 .about-content{
     max-inline-size: 900px;
 }
-
+.aboutlogo{
+    max-width: 100%;
+    height: auto;
+}
 .about-content h1{
     font-size: 30px;
     font-weight: 700;
@@ -282,24 +281,24 @@ nav a:active{
 
 
 .interested-box i{
-   font-size: 7rem;
+   font-size: 5rem;
    color: var(--bg-biru3);
 }
 
 .interested-box2 i{
-   font-size: 7rem;
+   font-size: 5rem;
    color: var(--bg-hijau3);
 }
 
 .interested-box3 i{
-   font-size: 7rem;
+   font-size: 5rem;
    color: var(--bg-orange);
 }
 
 
 .interested-container h3{
     margin: 20px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 .interested-box p{
@@ -397,6 +396,10 @@ nav a:active{
    transform: scale(1.03);
 }
 
+/*video editing*/
+#video-editing{
+    min-height: auto;
+}
 
 .video-editing .card{
     position: relative;
@@ -448,7 +451,7 @@ nav a:active{
 
 .contact h2{
     text-align: center;
-    margin: 50px 20px;
+    margin: 0px 0px;
     font-size: 30px;
     font-weight: 600;
     color: var(--bg-biru1);
@@ -465,15 +468,15 @@ nav a:active{
 }
 
 .contact-container a{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 40px;
     color: #ffffff;
 
 }
 
 .contact-container i{
-    font-size: 40px;
-    color: var(--bg-hijau1);
+    font-size: 60px;
+    color: var(--bg-biru2);
 }
 
 
@@ -497,12 +500,12 @@ nav a:active{
      padding: 10px;
    }
 
-   .hidemobile{
+   .aboutlogo{
     display: none;
    }
    /*button*/
    .btn-group{
-      margin: 10px 0px 0px 60px;
+      margin: 0 auto;
    }
 
    /*home*/
@@ -529,7 +532,7 @@ nav a:active{
     }
 
     .btn-box{
-        margin-left: 90px;
+       
     }
 
     .about-content p{
@@ -539,6 +542,10 @@ nav a:active{
        -webkit-hyphens: auto;
        hyphens: auto;
     }
+
+    /*intersted*/
+
+
 
 }
 
