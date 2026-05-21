@@ -14,15 +14,15 @@
 <!--header section--> 
    <nav>
      <ul class="sidebar">
-        <li onclick=hideSidebar()><a href="#"><i class='bx  bx-x'></i> </a></li>
+        <li onclick=hideSidebar()><a href="#"><i class='bx  bx-x'></i></a></li>
         <li><a href="#home">home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#interested">Interested</a></li>
         <li><a href="#project">Project</a></li>
         <li><a href="#contact">Contact</a></li>
      </ul>
-      <ul>
-        <li><a href="#home" class="nama">Adam alireza </a></li>
+      <ul class="bar">
+        <li><a href="#home">Adam alireza </a></li>
         <li class="hidemobile"><a href="#home">home</a></li>
         <li class="hidemobile"><a href="#about">About</a></li>
         <li class="hidemobile"><a href="#interested">Interested</a></li>
@@ -74,7 +74,7 @@
 
       <div class="interested-container">
            <div class="interested-box">
-              <i class='bx bx-code-alt'></i>
+              <i class="ri-code-line"></i>
               <h3>programing</h3>
               <img src="gambar/logoprograming.png" height="40px">
               <div class="btn-box">
@@ -82,8 +82,8 @@
               </div>
            </div>                                                                                                 
 
-           <div class="interested-box2">
-              <i class='bx bx-paint'></i>
+           <div class="interested-box">
+              <i class="ri-brush-line"></i>
               <h3>designer</h3>
               <img src="gambar/canva.png" height="40px">
               <div class="btn-box">
@@ -91,15 +91,62 @@
               </div>
            </div>
 
-           <div class="interested-box3">
-              <i class='bx bxs-universal-access'></i>
+           <div class="interested-box">
+              <i class="ri-box-3-line"></i>
               <h3>3D object</h3>
               <img src="gambar/blender.png" height="40px">
               <div class="btn-box">
                 <a href="#video-editing" class="btn btn-primary">Explore</a>
-              </div>   
+              </div> 
            </div>
       </div>
+   </section>
+
+<!--work-->
+   <section class="work">
+      <h1>latest work and project</h1>
+          <div class="carousel">
+              <div class="work-box">
+                  <div class="foto">
+                      <img src="gambarwork/yt.png">
+                  </div>
+                  <div class="text">
+                     <h5>youtuber</h5>
+                     <p>Selamat datang di channel saya,membahas banyak hal dari politik,berita terkini,ekonomi dan banyak hal</p>
+                     <a href="" class="see"><i class="ri-arrow-right-line"></i></a>
+                  </div>
+               </div>
+              <div class="work-box">
+                  <div class="foto">
+                      <img src="gambarwork/jpl.jpg">
+                  </div>
+                  <div class="text">
+                     <h5>freelance</h5>
+                     <p>membantu perusahaan jpl untuk membagikan beras ke warga sesuai dengan sop</p>
+                     <a href="" class="see"> <i class="ri-arrow-right-circle-line"></i></a>
+                  </div>
+               </div>               
+              <div class="work-box">
+                  <div class="foto">
+                      <img src="gambarwork/poliban.jpg">
+                  </div>
+                  <div class="text">
+                     <h5>freelance</h5>
+                     <p>menjadi asisten lab sementara dipoliteknik negeri banjarmasin</p>
+                     <a href="" class="see"> <i class="ri-arrow-right-circle-line"></i></a>
+                  </div>
+               </div> 
+              <div class="work-box">
+                  <div class="foto">
+                      <img src="gambarwork/pama.jpg">
+                  </div>
+                  <div class="text">
+                     <h5>magang</h5>
+                     <p>menjadi administrator jaringan di buhutu jaya perusahaan pama</p>
+                     <a href="" class="see"> <i class="ri-arrow-right-circle-line"></i></a>
+                  </div>
+               </div> 
+            </div>                                                                                             
    </section>
 
 <!--project section-->
@@ -190,18 +237,10 @@
        <div>
           <a href="https://github.com/adamalireza"><i class="ri-github-fill"></i></a>
        </div>
+      <div>
+          <a href="https://www.youtube.com/@adamalirezas3630"><i class="ri-youtube-fill"></i></a>
+       </div>
       </div>
    </section>
-
-   <script>
-       function showSidebar(){
-         const sidebar = document.querySelector('.sidebar')
-         sidebar.sytle.display = 'flex'
-      }
-      function hideSidebar(){
-         const sidebar = document.querySelector('.sidebar')
-         sidebar.sytle.display = 'none'
-      }
-   </script>
-</body>
+   <script src="scriptt.js"></script>
 </html>
